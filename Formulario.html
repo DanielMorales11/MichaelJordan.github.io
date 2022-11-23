@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="grid.css">
+  </head>
+  <body class="grid-container">
+    <header class="header">
+
+    </header>
+    <aside class="sidebar">
+      <h1>Menù</h1> <a href="grid.html">Inicio </a><br><a href="Historia.html">Historia</a><br><a href="Carrera profesional.html">Carrera profesional</a><br><a href="Equipos.html">Equipos</a><br>
+        <a href="En la actualidad.html">En la actualidad</a><br>Formulario
+    </aside>
+    <main class="main">
+      <h2>Encuesta de Michael Jordan</h2>
+      <h3>Datos</h3>
+  <form action="index.html">
+    <label for="fname">Nombre Completo:</label><br>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="Fecha de nacimiento">Fecha de nacimiento:</label><br>
+    <input type="date" id="Fecha de nacimiento" name="Fecha de nacimiento"><br><br>
+    <label for="email">Correo electrònico:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+      <h3>Preguntas</h3>
+      <p>¿Te gusta el baloncesto?</p>
+    <input type="radio" id="Si" name="preg1" value="si">
+    <label for="Si">Si</label><br>
+    <input type="radio" id="No" name="preg1" value="No">
+    <label for="No">No</label><br><br>
+    <label for="preg2">Con que frecuencia ves baloncesto (Lado izquierdo Nada, lado derecho Seguido)</label><br>
+    <input type="range" id="preg2" name="preg2" min="Nada" max="Seguido"><br><br>
+      <p>¿Habìas escuchado acerca de Michael Jordan?</p>
+    <input type="radio" id="Si" name="preg3" value="Si">
+    <label for="Si">Si</label><br>
+    <input type="radio" id="No" name="preg3" value="No">
+    <label for="No">No</label><br><br>
+    <label for="preg4">¿Cuantos equipos de baloncesto conoces?</label><br>
+    <input type="number" id="preg4" name="preg4" min="0" max="30"><br><br>
+    <p>Marca las casillas de los equipos que conozcas o hayas escuchado.</p>
+    <input type="checkbox" id="Equipo1" name="Equipo1" value="Warriors">
+    <label for="Equipo1"> Golden State Warriors</label><br>
+    <input type="checkbox" id="Equipo2" name="Equipo2" value="Bulls">
+    <label for="Equipo2"> Chicago Bulls</label><br>
+    <input type="checkbox" id="Equipo3" name="Equipo3" value="Celtics">
+    <label for="Equipo3"> Boston Celtics</label><br>
+    <input type="checkbox" id="Equipo4" name="Equipo4" value="Heat">
+    <label for="Equipo4"> Miami Heat</label><br><br>
+    <p>Si pudieras elegir el color para unos tenis para baloncesto, que color eligirías.</p>
+    <label for="preg6">Escoge el color:</label>
+    <input type="color" id="preg6" name="preg6" value="#ff0000"><br><br>
+    <p>Escribe la medida de tu calzado.</p>
+    <label for="preg7">(Escribe una medida del 2 al 13):</label>
+    <input type="number" id="preg7" name="preg7" min="2" max="13"><br><br>
+    <input type="submit" value="Enviar">
+  </form>
+    </main>
+  </body>
+</html>

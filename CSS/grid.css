@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height:100%;
+}
+
+body {
+  min-height:100%;
+}
+
+.grid-container > * {
+  box-shadow: -1px 1px 7px 0px Black;
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+}
+
+.header {
+  grid-area: header;
+  background-color: red;
+  background-image: url("https://th.bing.com/th/id/OIP.Rc7Zh2fvn9tWB9gX4eS6TQHaCv?w=349&h=129&c=7&r=0&o=5&pid=1.7");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: red;
+  text-align: inherit;
+}
+
+.main {
+  grid-area: main;
+  background-color: red;
+}
+
+.grid-container {
+  display: grid;
+  gap: 5px;
+  grid-template-rows: 100px 180px auto;
+  grid-template-areas:
+  "header"
+  "sidebar"
+  "main";
+}
+
+@media (min-width: 600px) {
+  .grid-container {
+    background-color: white;
+    grid-template-columns: 180px auto;
+    grid-template-rows: 150px auto;
+    grid-template-areas:
+    "header  header"
+    "sidebar main";
+  }
+
+  .header {
+    background-size: contain;
+    background-repeat: repeat-x;
+  }
+  .sidebar {
+    grid-area: sidebar;
+    background-color: red;
+    text-align: center;
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 900px) {
+  .grid-container {
+    background-color: white;
+    grid-template-columns: 180px auto;
+    grid-template-rows: 150px auto;
+    grid-template-areas:
+    "header  header"
+    "sidebar main";
+}
+
+.header {
+  background-size: contain;
+  background-repeat: repeat-x;
+}
+.sidebar {
+  grid-area: sidebar;
+  background-color: red;
+  text-align: center;
+  font-size: 35px;
+}
